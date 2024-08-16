@@ -1,0 +1,121 @@
+@font-face {
+    font-family: DPComic;
+    src: url("../fonts/dpcomic.ttf");
+    font-weight: normal;
+}
+
+* {
+    font-family: DPComic, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+body {
+    background-image: url(../images/patternBackground.png);
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    background-image: url(../images/AnimatedBackground.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    height: 540px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px #13131d;
+}
+
+.contentContainer {
+    background-color: rgba(233, 235, 232, 0.6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px #13131d;
+    padding: 65px 55px 20px 55px;
+}
+
+.profilePicture {
+    top: -45px;
+    left: 125px;
+    right: 125px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: solid 1px #13131d;
+}
+
+.contentContainer h1 {
+    font-size: 40px;
+    color: #130423;
+    text-align: center;
+}
+
+.contentContainer h2 {
+    font-size: 30px;
+    color: #322C5F;
+    text-align: center;
+}
+
+.contentContainer .skillsContainer {
+    display: flex;
+    column-gap: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contentContainer .skillsContainer:before {
+    content: 'skills:';
+    position: absolute;
+    top: -15px;
+    font-size: 15px;
+    left: 0;
+    color: #322C5F;
+
+}
+
+.contentContainer .skillsContainer svg {
+    width: 25px;
+    height: 25px;
+}
+
+.contentContainer .skillsContainer div {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #130423;
+    border-radius: 4px;
+}
+
+.contentContainer .skillsContainer div img {
+    width: 21px;
+}
+
+.contentContainer p {
+    max-width: 240px;
+    font-size: 12px;
+    color: #322C5F;
+    margin-top: 20px;
+}
