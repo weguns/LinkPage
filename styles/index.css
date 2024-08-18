@@ -148,11 +148,67 @@ body {
     animation: ease-in-out jump 1s;
 }
 
+.controlsContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 105px;
+    justify-content: center;
+    align-items: start;
+}
+
+#right, #left {
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 5px ;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    transition: all 150ms;
+}
+
+
+#jump {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 5px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    transition: all;
+}
+
+.deactivateBut {
+    border: #2C2752;
+    color: #2C2752;
+}
+
+.activeBut{
+    border: rgba(0, 83, 255, 0.5);
+    color: rgba(0, 83, 255, 0.5);
+}
+
 @keyframes jump {
     0% {
         bottom: 15px;
     }
-    50%{
+    50% {
         bottom: 90px;
     }
     100% {
