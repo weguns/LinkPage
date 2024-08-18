@@ -145,7 +145,7 @@ body {
 }
 
 .jump {
-    animation: ease-in-out jump 1s;
+    animation: ease-in-out jump 750ms;
 }
 
 .controlsContainer {
@@ -169,7 +169,7 @@ body {
     height: 50px;
     text-align: center;
     border-radius: 10px;
-    border: solid 5px ;
+    border: solid 5px;
     font-size: 40px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1px);
@@ -199,7 +199,7 @@ body {
     color: #2C2752;
 }
 
-.activeBut{
+.activeBut {
     border: rgba(0, 83, 255, 0.5);
     color: rgba(0, 83, 255, 0.5);
 }
