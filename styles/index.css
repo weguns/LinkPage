@@ -1,7 +1,7 @@
 @font-face {
     font-family: DPComic;
     src: url("../fonts/dpcomic.ttf");
-    font-weight: normal;
+    font-weight: auto;
 }
 
 * {
@@ -27,11 +27,12 @@ body {
 
 .mainContainer {
     background-image: url(../images/AnimatedBackground.gif);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 960px;
-    height: 540px;
+    width: 1200px;
+    height: 675px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border: solid 1px #13131d;
@@ -43,18 +44,19 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border: solid 1px #13131d;
-    padding: 65px 55px 20px 55px;
+    padding: 135px 75px 20px 75px;
 }
 
 .profilePicture {
-    top: -45px;
-    left: 125px;
-    right: 125px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -64,13 +66,13 @@ body {
 }
 
 .contentContainer h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: #130423;
     text-align: center;
 }
 
 .contentContainer h2 {
-    font-size: 30px;
+    font-size: 35px;
     color: #322C5F;
     text-align: center;
 }
@@ -81,27 +83,30 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .contentContainer .skillsContainer:before {
     content: 'skills:';
     position: absolute;
-    top: -15px;
-    font-size: 15px;
+    top: -29px;
+    font-size: 24px;
     left: 0;
+    right: 0;
     color: #322C5F;
-
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 
 .contentContainer .skillsContainer svg {
-    width: 25px;
-    height: 25px;
+    width: 44px;
+    height: 44px;
 }
 
 .contentContainer .skillsContainer div {
-    width: 25px;
-    height: 25px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,12 +115,47 @@ body {
 }
 
 .contentContainer .skillsContainer div img {
-    width: 21px;
+    width: 36px;
 }
 
 .contentContainer p {
-    max-width: 240px;
-    font-size: 12px;
+    max-width: 341px;
+    font-size: 20px;
     color: #322C5F;
-    margin-top: 20px;
+    margin-top: 30px;
+    letter-spacing: -1px;
+}
+
+#object {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-size: cover;
+    display: inline-block;
+    left: 10px;
+    bottom: 10px;
+}
+
+.stop {
+    background-image: url("../images/charIdle.gif");
+}
+
+.move {
+    background-image: url("../images/charRunning.gif");
+}
+
+.jump {
+    animation: ease-in-out jump 1s;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 15px;
+    }
+    50%{
+        bottom: 90px;
+    }
+    100% {
+        bottom: 15px;
+    }
 }
