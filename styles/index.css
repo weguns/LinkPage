@@ -212,9 +212,13 @@ body {
     bottom: 0;
     background-color: #2C2752;
     z-index: 999;
+    padding: 100px 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
 }
 
-#loading div{
+#loading div {
     position: absolute;
     top: 0;
     left: 0;
@@ -226,6 +230,7 @@ body {
     background-image: url("../images/charRunning.gif");
     background-size: cover;
 }
+
 @keyframes jump {
     0% {
         bottom: 15px;

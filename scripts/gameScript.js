@@ -7,8 +7,7 @@ const rightBut = document.querySelector('#right');
 const leftBut = document.querySelector('#left');
 
 document.addEventListener('DOMContentLoaded', () => {
-    alert('Page is currently only available on desktop.\nPress the G button to open the game and the H button to close the game')
-    loadingPage.style.display = 'none';
+    setTimeout(() => loadingPage.style.display = 'none', 5000);
 })
 
 let objectXPos = 0;
