@@ -1,3 +1,5 @@
+alert('Page is currently only available on desktop.\nGame Controls => D:Right A:Left Space:Jump')
+
 const object = document.getElementById('object');
 
 document.body.addEventListener('keydown', (e) => handelGameMoves(e))
