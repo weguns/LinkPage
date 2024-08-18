@@ -204,6 +204,28 @@ body {
     color: rgba(0, 83, 255, 0.5);
 }
 
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2C2752;
+    z-index: 999;
+}
+
+#loading div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url("../images/charRunning.gif");
+    background-size: cover;
+}
 @keyframes jump {
     0% {
         bottom: 15px;

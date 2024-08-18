@@ -1,10 +1,15 @@
-alert('Page is currently only available on desktop.\n Press the G button to open the game and the H button to close the game')
 
+const loadingPage = document.getElementById("loading");
 const object = document.getElementById('object');
 const controlsContainer = document.getElementById('controlsContainer');
 const jumpBut = document.querySelector('#jump');
 const rightBut = document.querySelector('#right');
 const leftBut = document.querySelector('#left');
+
+document.addEventListener('DOMContentLoaded', () => {
+    alert('Page is currently only available on desktop.\nPress the G button to open the game and the H button to close the game')
+    loadingPage.style.display = 'none';
+})
 
 let objectXPos = 0;
 let objectAlign = 1;
